@@ -12,6 +12,17 @@ const SearchForecast: React.FC = () => {
     const data = axios.get(api)
   }//continuation...
 
+  //exemple
+  useEffect(() => {
+    try {
+
+    } catch (error) {
+
+    } finally {
+      
+    }
+  }, []);
+
   return (
     <Box>
       <InputGroup size="lg">

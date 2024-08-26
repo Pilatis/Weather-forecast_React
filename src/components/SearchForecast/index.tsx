@@ -5,6 +5,17 @@ import useSearch from '../../hook/useSearch';
 const SearchForecast: React.FC = () => {
   const { searchCity, cityValue } = useSearch();
 
+  //exemple
+  useEffect(() => {
+    try {
+
+    } catch (error) {
+
+    } finally {
+      
+    }
+  }, []);
+
   return (
     <Box>
       <InputGroup size="lg">

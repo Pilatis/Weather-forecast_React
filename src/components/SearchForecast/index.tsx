@@ -1,20 +1,9 @@
-import { InputGroup, Box, Input, InputRightAddon, Button } from '@chakra-ui/react'
+import { InputGroup, Box, Input, InputRightAddon, Button, Heading } from '@chakra-ui/react'
 import React from 'react'
 import useSearch from '../../hook/useSearch';
 
 const SearchForecast: React.FC = () => {
-  const { searchCity, cityValue } = useSearch();
-
-  //exemple
-  useEffect(() => {
-    try {
-
-    } catch (error) {
-
-    } finally {
-      
-    }
-  }, []);
+  const { searchCity, cityValue, dataCity } = useSearch();
 
   return (
     <Box>
@@ -24,6 +13,10 @@ const SearchForecast: React.FC = () => {
           <Button onClick={searchCity} size="lg" width="100%">Buscar</Button>
         </InputRightAddon>
       </InputGroup>
+
+      <Heading>
+        {dataCity?.name}
+      </Heading>
     </Box>
   );
 };

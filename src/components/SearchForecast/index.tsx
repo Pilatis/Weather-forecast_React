@@ -20,14 +20,12 @@ const SearchForecast: React.FC = () => {
           borderColor={isError ? 'red.500' : 'bleu.500'}
           errorBorderColor={isError ? 'red' : ''}
         />
-        <InputRightAddon>
-          <Button onClick={searchCity} size="lg" width="100%">
+        <InputRightAddon bgColor="green" border="none" padding="0">
+          <Button onClick={searchCity} colorScheme="green" size="lg" width="100%">
             Buscar
           </Button>
         </InputRightAddon>
       </InputGroup>
-
-      <Heading>{dataCity?.name}</Heading>
     </Box>
   );
 };

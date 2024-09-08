@@ -6,6 +6,7 @@ type SearchTypes = {
     keyWeather: string;
     loading: boolean;
     dataCity: DataCityTypes | undefined;
+    isError: boolean;
 }
 
 export default SearchTypes;

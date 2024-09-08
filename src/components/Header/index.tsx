@@ -1,12 +1,12 @@
 import React from 'react';
-import { Box, Heading } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 
 
 const Header = () => {
   return (
-    <Box>
+    <Flex alignItems="center" justifyContent="center">
         <Heading color="white">Previsão do Tempo</Heading>
-    </Box>
+    </Flex>
   )
 }
 

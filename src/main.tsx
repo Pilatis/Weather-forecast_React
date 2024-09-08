@@ -8,14 +8,12 @@ import ApiCityProvider from './provider/ApiCityProvider.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-          <ApiCityProvider>
-    <SearchProvider>
-
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-
-    </SearchProvider>
+    <ApiCityProvider>
+      <SearchProvider>
+        <ChakraProvider>
+          <App />
+        </ChakraProvider>
+      </SearchProvider>
     </ApiCityProvider>
   </React.StrictMode>
 );

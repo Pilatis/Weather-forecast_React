@@ -18,8 +18,8 @@ function App() {
 
           {dataCity && (
             <ContainerWheather
-              childrenHeader={<WheatherHeader />}
-              childrenBody={<WheatherBody />}
+              childrenHeader={<WheatherHeader dataCity={dataCity} />}
+              childrenBody={<WheatherBody dataCity={dataCity} />}
             />
           )}
         </Stack>

@@ -32,7 +32,7 @@ const ContainerWheather: React.FC<ContainerWheatherProps> = ({ childrenHeader, c
           >
             {children}
           </Box>
-        ))}
+        ))}''
       </Stack>
     </Flex>
   );

@@ -6,7 +6,7 @@ const WheatherBody: React.FC = () => {
   const { dataCity } = useSearch();
   return (
     <Flex padding="6px">
-       {dataCity?.base}
+      {dataCity?.base}
     </Flex>
   )
 }

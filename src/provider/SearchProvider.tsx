@@ -8,7 +8,7 @@ import { DataCityTypes } from '../types/DataCityTypes';
 const SearchProvider: React.FC<{ children: React.ReactNode }> = ({
   children
 }) => {
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const keyWeather = 'c7bea731ab9e74b757a129c36a0acf79';
   const { api } = useApiCity();
 

@@ -46,6 +46,8 @@ const SearchProvider: React.FC<{ children: React.ReactNode }> = ({
       if (response.status === 200) {
         setDataCity(response.data);
 
+        console.log(response.data)
+
         toast({
           title: 'Sucesso!',
           description: 'Busca realizada com sucesso.',

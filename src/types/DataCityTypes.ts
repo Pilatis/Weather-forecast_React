@@ -1,15 +1,3 @@
-export interface DataCityMainTypes {
-    main: { 
-        fells_like: number,
-        grnd_level: number,
-        humidity: number,
-        pressure: number,
-        sea_level: number,
-        temp_max: number,
-        temp_min: number,
-     }
-}
-
 
 export interface DataCityTypes {
     base: string;
@@ -18,12 +6,21 @@ export interface DataCityTypes {
     coord: { lon: number, lat: number };
     dt: number;
     id: number;
-    main: DataCityMainTypes;
+    main: { 
+        fells_like: number,
+        grnd_level: number,
+        humidity: number,
+        pressure: number,
+        sea_level: number,
+        temp: number,
+        temp_max: number,
+        temp_min: number,
+     };
     name: string;
     timezone: number;
     visibility: number;
     weather: {
-        decription: string;
+        description: string;
         icon: string;
         id: number;
         main: string;
